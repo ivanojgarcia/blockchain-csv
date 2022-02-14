@@ -50,11 +50,11 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Install
 
-    ```shell 
+  ```shell 
     $ git clone https://github.com/ivanojgarcia/blockchain-csv.git
     $ cd blockchain-csv
     $ yarn install
-    ```
+  ```
 
 ## Configure app and aditional scripts
 
