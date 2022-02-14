@@ -6,6 +6,20 @@ The idea is that each one of the blocks is validated, before its insertion (mini
 
 For this we create a file with which you can obtain and mine the blocks
 
+The project creates a CSV file that contains or simulates a blockchain that, starting from a genesis block, allows the creation of blocks to store messages.
+
+For the creation of the hash we use Proof of Work (PoW) as a consensus protocol.
+
+The technologies used to develop it were:
+
+- NodeJS
+- ExpressJS
+
+## The enpoints are:
+
+- [GET] <HOST>/blocks to get the blocks of the blockchain.
+- [POST] <HOST>/mine to add blocks into the blockchain (mine).
+
 ---
 ## Requirements
 
@@ -20,10 +34,12 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 - #### Node installation on Ubuntu
 
   You can install nodejs and npm easily with apt install, just run the following commands.
-    ```shell
-      $ sudo apt install nodejs
-      $ sudo apt install npm
-    ```
+  
+```shell
+  $ sudo apt install nodejs
+  $ sudo apt install npm
+```
+
 - #### Other Operating Systems
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
@@ -38,7 +54,7 @@ If the installation was successful, you should be able to run the following comm
 ```
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
-   `$ npm install npm -g`
+`$ npm install npm -g`
 
 ###
 ### Yarn installation
@@ -59,6 +75,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Configure app and aditional scripts
 
 The project has the environment variables associated with each environment, which are segmented into .env files depending on the environment we have:
+
 - `.env` for production
 - `env.dev` for development
 - `.env.test` for testing
@@ -76,9 +93,10 @@ As good practices, it is suggested that each critical or logical method carry it
 For that we must execute the next script `yarn test`
 ## Running the project
 
-  - `$ yarn start` to production
-  - `$ yarn start:dev` to dev or local stage
-  - `$ yarn start:test` to testing stage
+- `$ yarn start` to production
+- `$ yarn start:dev` to dev or local stage
+- `$ yarn start:test` to testing stage
+
 
 ## Simple build for production
 
