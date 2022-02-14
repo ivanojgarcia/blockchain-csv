@@ -53,17 +53,29 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ cd blockchain-csv
     $ yarn install
 
-## Configure app
+## Configure app and aditional scripts
 
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+The project has the environment variables associated with each environment, which are segmented into .env files depending on the environment we have:
+- `.env` for production
+- `env.dev` for development
+- `.env.test` for testing
 
-- A setting;
-- Another setting;
-- One more setting;
+There are in turn different scripts that improve the understanding and standard of the code among those we have:
 
+$ yarn lint *With this we evaluate and solve linting problems*
+$ yarn format *With this script we format the code en base a los estandares de prettier*
+$ yarn prettier:check *With this script we can take the warning or bad formatted code by files*
+
+## Running the Unit Test
+
+As good practices, it is suggested that each critical or logical method carry its corresponding unit test, for this some tests were added that can evaluate the different critical cases of functionality
+
+For that we must execute the next script `yarn test`
 ## Running the project
 
-    $ yarn start
+  - $ yarn start to production
+  - $ yarn start:dev to dev or local stage
+  - $ yarn start:test to testing stage
 
 ## Simple build for production
 

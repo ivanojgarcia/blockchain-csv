@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get("/blocks", async (req, res) => {
   const blocks = await blockChainCsv.read();
   if (blocks.length === 0) blockChainCsv.create(blockchain.blocks);
+  else blockchain.blocks = blocks;
   res.json(blockchain.blocks);
 });
 
