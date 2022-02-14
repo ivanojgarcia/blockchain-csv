@@ -1,6 +1,10 @@
-# Challenge ATIX
+# Blockchain CSV
 
-A nice project with a nice description
+The following project seeks to show how a blockchain is built by inserting each of the blocks in a CSV file.
+
+The idea is that each one of the blocks is validated, before its insertion (mining) and that they comply with the necessary parameters for this purpose.
+
+For this we create a file with which you can obtain and mine the blocks
 
 ---
 ## Requirements
@@ -26,10 +30,10 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 If the installation was successful, you should be able to run the following command.
 
     $ node --version
-    v8.11.3
+    v12.22.9
 
     $ npm --version
-    6.1.0
+    8.4.1
 
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
@@ -45,8 +49,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
+    $ git clone https://github.com/ivanojgarcia/blockchain-csv.git
+    $ cd blockchain-csv
     $ yarn install
 
 ## Configure app

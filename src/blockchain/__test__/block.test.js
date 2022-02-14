@@ -32,7 +32,8 @@ describe("Block Class", () => {
 
   it("Using the static function hash()", () => {
     hash = Block.hash(previousBlock.hash, message, nonce);
-    const hashOutput = "5697928d4648df4126e2b669f4293a3bcadc20dbf6a04411ee49967c122791ac";
+    const hashOutput =
+      "5697928d4648df4126e2b669f4293a3bcadc20dbf6a04411ee49967c122791ac";
     expect(hash).toEqual(hashOutput);
   });
 
