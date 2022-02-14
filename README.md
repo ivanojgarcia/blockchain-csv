@@ -62,9 +62,9 @@ The project has the environment variables associated with each environment, whic
 
 There are in turn different scripts that improve the understanding and standard of the code among those we have:
 
-$ yarn lint *With this we evaluate and solve linting problems*
-$ yarn format *With this script we format the code en base a los estandares de prettier*
-$ yarn prettier:check *With this script we can take the warning or bad formatted code by files*
+`$ yarn lint` With this we evaluate and solve linting problems
+`$ yarn format` With this script we format the code en base a los estandares de prettier
+`$ yarn prettier:check` With this script we can take the warning or bad formatted code by files
 
 ## Running the Unit Test
 
