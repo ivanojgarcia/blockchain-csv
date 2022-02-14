@@ -20,38 +20,41 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 - #### Node installation on Ubuntu
 
   You can install nodejs and npm easily with apt install, just run the following commands.
-
+    ```shell
       $ sudo apt install nodejs
       $ sudo apt install npm
-
+    ```
 - #### Other Operating Systems
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
 If the installation was successful, you should be able to run the following command.
 
+  ```shell
     $ node --version
     v12.22.9
 
     $ npm --version
     8.4.1
-
+```
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
-    $ npm install npm -g
+   `$ npm install npm -g`
 
 ###
 ### Yarn installation
   After installing node, this project will need yarn too, so just run the following command.
 
-      $ npm install -g yarn
+  `$ npm install -g yarn`
 
 ---
 
 ## Install
 
+    ```shell 
     $ git clone https://github.com/ivanojgarcia/blockchain-csv.git
     $ cd blockchain-csv
     $ yarn install
+    ```
 
 ## Configure app and aditional scripts
 
@@ -62,9 +65,9 @@ The project has the environment variables associated with each environment, whic
 
 There are in turn different scripts that improve the understanding and standard of the code among those we have:
 
-`$ yarn lint` With this we evaluate and solve linting problems
-`$ yarn format` With this script we format the code en base a los estandares de prettier
-`$ yarn prettier:check` With this script we can take the warning or bad formatted code by files
+- `$ yarn lint` With this we evaluate and solve linting problems
+- `$ yarn format` With this script we format the code en base a los estandares de prettier
+- `$ yarn prettier:check` With this script we can take the warning or bad formatted code by files
 
 ## Running the Unit Test
 
@@ -73,10 +76,10 @@ As good practices, it is suggested that each critical or logical method carry it
 For that we must execute the next script `yarn test`
 ## Running the project
 
-  - $ yarn start to production
-  - $ yarn start:dev to dev or local stage
-  - $ yarn start:test to testing stage
+  - `$ yarn start` to production
+  - `$ yarn start:dev` to dev or local stage
+  - `$ yarn start:test` to testing stage
 
 ## Simple build for production
 
-    $ yarn build
+`$ yarn build`
