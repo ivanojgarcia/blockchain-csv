@@ -17,8 +17,8 @@ The technologies used to develop it were:
 
 ## The enpoints are:
 
-- [GET] <HOST>/blocks to get the blocks of the blockchain.
-- [POST] <HOST>/mine to add blocks into the blockchain (mine).
+- [GET] `<HOST>/blocks` to get the blocks of the blockchain.
+- [POST] `<HOST>/mine` to add blocks into the blockchain (mine).
 
 ---
 ## Requirements
